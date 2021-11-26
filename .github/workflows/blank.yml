@@ -25,10 +25,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: su root
-        run: su root
+        run: |
+su root
+alpine
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          alpine
           dpkg -i saily.deb
